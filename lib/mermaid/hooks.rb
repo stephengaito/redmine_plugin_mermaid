@@ -1,6 +1,6 @@
 # see: https://mermaid.js.org/intro/#mermaid-api
 
-module RedmineMermaid
+module Mermaid
   class Hooks < Redmine::Hook::ViewListener
     def view_layouts_base_html_head(context = {})
       tags = javascript_include_tag 'mermaid.min.js', plugin: 'mermaid'
