@@ -3,10 +3,10 @@ require 'redmine'
 # This is a horible HACK... but I don't know the official way to add this
 # plugin's paths to the ruby $LOAD_PATH... so since this works... we use
 # it!
-#lib = File.expand_path '../lib', __FILE__
-#$LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
+lib = File.expand_path '../lib', __FILE__
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
-require_dependency 'lib/mermaid/hooks'
+require_dependency 'mermaid/hooks'
 
 
 Redmine::Plugin.register :mermaid do
